@@ -1,0 +1,418 @@
+.main {
+    width: 980px;
+    height: 455px;
+    margin-left: 220px;
+    margin-top: 10px;
+}
+
+
+/* 轮播图 */
+
+.focus {
+    position: relative;
+    float: left;
+    width: 720px;
+    height: 455px;
+}
+
+.image {
+    display: none;
+    position: absolute;
+    left: 0;
+    top: 0;
+    z-index: 1;
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    transition: 10s;
+    cursor: pointer;
+}
+
+ul li img {
+    width: 100%;
+    height: 100%;
+}
+
+.prev,
+.next {
+    position: absolute;
+    top: 50%;
+    margin-top: -30px;
+    width: 30px;
+    height: 60px;
+    background-color: rgba(0, 0, 0, .3);
+    text-align: center;
+    line-height: 60px;
+    color: #fff;
+    text-decoration: none;
+    z-index: 100;
+    font-family: "icomoon";
+}
+
+.prev:hover,
+.next:hover {
+    background-color: rgba(0, 0, 0, .6)
+}
+
+.next {
+    right: 0;
+    border-radius: 15px 0 0 15px;
+}
+
+.prev {
+    left: 0;
+    border-radius: 0 15px 15px 0;
+}
+
+.pointList {
+    position: absolute;
+    bottom: 20px;
+    left: 360px;
+    z-index: 1000;
+}
+
+.pointList {
+    position: absolute;
+    bottom: 15px;
+    left: 50%;
+    margin-left: -35px;
+    width: 70px;
+    height: 13px;
+    background: rgba(255, 255, 255, .3);
+    border-radius: 7px;
+}
+
+.point {
+    float: left;
+    width: 8px;
+    height: 8px;
+    background-color: #fff;
+    border-radius: 50%;
+    margin: 3px;
+    cursor: pointer;
+}
+
+.point.active {
+    background-color: #ff5000;
+}
+
+
+/* 轮播图end */
+
+.newsflash {
+    float: right;
+    width: 250px;
+    height: 455px;
+}
+
+.news {
+    height: 165px;
+    border: 1px solid #e4e4e4;
+}
+
+.news-hd {
+    height: 33px;
+    line-height: 33px;
+    border-bottom: 1px dotted #e4e4e4;
+    padding: 0 15px;
+}
+
+.news-hd h5 {
+    float: left;
+    font-size: 14px;
+}
+
+.news-hd .more {
+    float: right;
+}
+
+.news-hd .more::after {
+    font-family: 'icomoon';
+    content: '\e90b';
+}
+
+.news-bd {
+    padding: 5px 15px 0;
+}
+
+.news-bd ul li {
+    height: 24px;
+    line-height: 24px;
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+}
+
+.lifeservice {
+    overflow: hidden;
+    height: 209px;
+    /* background-color: purple; */
+    border: 1px solid #e4e4e4;
+    border-top: 0;
+}
+
+.lifeservice ul {
+    width: 252px;
+}
+
+.lifeservice ul li {
+    float: left;
+    width: 63px;
+    height: 71px;
+    border-right: 1px solid #e4e4e4;
+    border-bottom: 1px solid #e4e4e4;
+    text-align: center;
+    cursor: pointer;
+}
+
+.lifeservice ul li:hover {
+    color: #c81623;
+}
+
+.lifeservice ul li i {
+    display: inline-block;
+    width: 24px;
+    height: 28px;
+    /* background-color: pink; */
+    margin-top: 12px;
+}
+
+.lifeservice ul li:nth-child(1) i,
+.lifeservice ul li:nth-child(5) i,
+.lifeservice ul li:nth-child(9) i {
+    background: url(../images/icons.png) no-repeat -19px -15px;
+}
+
+.lifeservice ul li:nth-child(2) i,
+.lifeservice ul li:nth-child(6) i,
+.lifeservice ul li:nth-child(10) i {
+    background: url(../images/icons.png) no-repeat -80px -15px;
+}
+
+.lifeservice ul li:nth-child(3) i,
+.lifeservice ul li:nth-child(7) i,
+.lifeservice ul li:nth-child(11) i {
+    background: url(../images/icons.png) no-repeat -140px -15px;
+}
+
+.lifeservice ul li:nth-child(4) i,
+.lifeservice ul li:nth-child(8) i,
+.lifeservice ul li:nth-child(12) i {
+    background: url(../images/icons.png) no-repeat -205px -15px;
+}
+
+.bargain {
+    margin-top: 5px;
+}
+
+
+/* 推荐模块 */
+
+.recom {
+    height: 163px;
+    background-color: #ebebeb;
+    margin-top: 12px;
+}
+
+.recom_hd {
+    float: left;
+    height: 163px;
+    width: 205px;
+    background-color: #5c5251;
+    text-align: center;
+    padding-top: 30px;
+}
+
+.recom_bd {
+    float: left;
+}
+
+.recom_bd ul li {
+    position: relative;
+    float: left;
+}
+
+.recom_bd ul li img {
+    width: 248px;
+    height: 163px;
+    cursor: pointer;
+}
+
+.recom_bd ul li:nth-child(-n+3)::after {
+    content: '';
+    position: absolute;
+    right: 0;
+    top: 10px;
+    width: 1px;
+    height: 145px;
+    background-color: #ddd;
+}
+
+
+/* 猜你喜欢模块 */
+
+.like {
+    height: 272px;
+    margin-top: 10px;
+}
+
+.like-top {
+    position: relative;
+    width: 1200px;
+    height: 40px;
+    line-height: 40px;
+}
+
+.like-top h2 {
+    float: left;
+    font-weight: 200;
+}
+
+.like-top span {
+    float: right;
+    cursor: pointer;
+}
+
+.like-top span::after {
+    margin-left: 10px;
+    font-family: 'icomoon';
+    content: '\e982';
+}
+
+.like-bottom {
+    height: 232px;
+    border: 1px solid rgba(0, 0, 0, .1);
+    margin-bottom: 10px;
+}
+
+.like-bottom ul li {
+    position: relative;
+    display: block;
+    float: left;
+    width: 199px;
+    height: 222px;
+    background: url('../upload/like/图层152.png');
+    text-align: center;
+    cursor: pointer;
+}
+
+.pic {
+    width: 100%;
+    height: 160px;
+}
+
+.pic img {
+    width: 100%;
+    height: 100%;
+}
+
+.info {
+    border-right: 1px solid rgba(0, 0, 0, .1);
+}
+
+.info-last {
+    border: none
+}
+
+.info h4 {
+    font-size: 10px;
+    font-family: '宋体';
+    font-weight: 200;
+}
+
+.info h4:hover {
+    color: red
+}
+
+.price {
+    font-size: 20px;
+    color: red;
+}
+
+
+/* 家用电梯模块 */
+
+.box_hd {
+    height: 30px;
+    border-bottom: 2px solid #c81623;
+}
+
+.box_hd h3 {
+    float: left;
+    font-size: 18px;
+    color: #c81623;
+    font-weight: 400;
+}
+
+.tab_list {
+    float: right;
+    line-height: 30px;
+}
+
+.tab_list ul li {
+    float: left;
+}
+
+.tab_list ul li a {
+    margin: 0 15px;
+}
+
+.floor .w {
+    margin-top: 30px;
+}
+
+.box_bd {
+    height: 361px;
+}
+
+.tab_list_item>div {
+    float: left;
+    height: 361px;
+}
+
+.col_210 {
+    width: 210px;
+    background-color: #f9f9f9;
+    text-align: center;
+}
+
+.col_210 ul li {
+    float: left;
+    width: 85px;
+    height: 34px;
+    border-bottom: 1px solid #ccc;
+    text-align: center;
+    line-height: 33px;
+    margin-right: 10px;
+}
+
+.col_210 ul {
+    padding-left: 12px;
+}
+
+.col_329 {
+    width: 329px;
+}
+
+.col_221 {
+    width: 221px;
+    border-right: 1px solid #ccc;
+}
+
+.col_219 {
+    width: 219px;
+}
+
+.bb {
+    /* 一般情况下，a如果包含有宽度的盒子，a需要转为块级元素 */
+    display: block;
+    border-bottom: 1px solid #ccc;
+}
+
+.card {
+    transition: 0.5s;
+}
+
+.card:hover {
+    padding-left: 10px;
+}
